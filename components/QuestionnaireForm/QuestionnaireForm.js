@@ -21,7 +21,7 @@ export default function QuestionnaireForm({
   return (
     <div>
       {!endOfQuestionnaire ? (
-        <form>
+        <form onSubmit={(e) => handleSubmit(e)}>
           <label>{questionsArray[questionStep].question}</label>
           {questionsArray[questionStep].answers.map((answer, index) => {
             return (
@@ -39,7 +39,7 @@ export default function QuestionnaireForm({
               </div>
             );
           })}
-          <button onClick={(e) => handleSubmit(e)}>Next</button>
+          <button>Next</button>
         </form>
       ) : (
         <div>
