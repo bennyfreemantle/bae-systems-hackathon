@@ -1,3 +1,4 @@
+import Header from "@/components/Header/Header";
 import QuestionnaireForm from "@/components/QuestionnaireForm/QuestionnaireForm";
 import Head from "next/head";
 import React, { useState } from "react";
@@ -65,6 +66,7 @@ export default function Questionnaire() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Header />
       <main className="flex flex-col min-h-screen">
         <QuestionnaireForm
           questionsArray={questionsArray}

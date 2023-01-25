@@ -2,6 +2,7 @@ import { React } from "react";
 import { useScore } from "@/context/useScore";
 import { RiMedal2Fill } from "react-icons/ri";
 import Head from "next/head";
+import Header from "@/components/Header/Header";
 
 export default function Leaderboard() {
   const { score } = useScore();
@@ -16,7 +17,8 @@ export default function Leaderboard() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="container mx-auto p-3 flex flex-col items-center justify-center min-h-screen">
+      <Header />
+      <div className="container mx-auto p-3 flex flex-col items-center min-h-screen">
         <h1 className="text-2xl font-bold">Leaderboard</h1>
 
         <table className="">
