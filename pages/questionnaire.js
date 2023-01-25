@@ -25,7 +25,7 @@ const questionsArray = [
     question: "Do you use reusable bags?",
     answers: [
       { options: "No", points: 0 },
-      { options: "Sometimes", points: 1 },
+      { options: "At times", points: 1 },
       { options: "Yes", points: 3 },
     ],
   },
@@ -41,7 +41,7 @@ const questionsArray = [
     question: "How much do you personally prioritse recycling at work",
     answers: [
       { options: "No what can i do?", points: 0 },
-      { options: "Sometimes i do my best", points: 1 },
+      { options: "I do my best", points: 1 },
       { options: "I always try to prioritse", points: 3 },
     ],
   },
