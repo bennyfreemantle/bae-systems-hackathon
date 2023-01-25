@@ -1,9 +1,17 @@
 import React from "react";
 
-export default function QuestionnaireForm() {
+export default function QuestionnaireForm({ questionsArray, questionStep }) {
   return (
     <div>
-      <h1>Questionnaire</h1>
+      <form>
+        <label>{question}</label>
+        {answers.map((answer, index) => {
+          <div>
+            <input type={"checkbox"} id={`answer-${index}`} />
+            <label for={`answer-${index}`}>{answer.title}</label>
+          </div>;
+        })}
+      </form>
     </div>
   );
 }

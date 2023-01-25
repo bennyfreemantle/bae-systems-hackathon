@@ -1,8 +1,31 @@
 import QuestionnaireForm from "@/components/QuestionnaireForm/QuestionnaireForm";
 import Head from "next/head";
-import React from "react";
+import React, { useState } from "react";
+
+const questionsArray = [
+  {
+    question: "How do you travel to work ?",
+    answers: [
+      { answer: "Car / Motorbike", points: 0 },
+      { answer: "Car Share", points: 1 },
+      { answer: "Bus", points: 2 },
+      { answer: "Walk / Cycle", points: 3 },
+    ],
+  },
+  {
+    question: "How do you travel to work ?",
+    answers: [
+      { answer: "Car / Motorbike", points: 0 },
+      { answer: "Car Share", points: 1 },
+      { answer: "Bus", points: 2 },
+      { answer: "Walk / Cycle", points: 3 },
+    ],
+  },
+];
 
 export default function Questionnaire() {
+  const [questionStep, setQuestionStep] = useState(0);
+
   return (
     <>
       <Head>
@@ -12,7 +35,10 @@ export default function Questionnaire() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="flex flex-col justify-center min-h-screen">
-        <QuestionnaireForm />
+        <QuestionnaireForm
+          questionsArray={questionsArray}
+          questionStep={questionStep}
+        />
       </main>
     </>
   );
