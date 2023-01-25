@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useScore } from "@/context/useScore";
+import Link from "next/link";
 
 export default function QuestionnaireForm({
   questionsArray,
@@ -59,9 +60,11 @@ export default function QuestionnaireForm({
       ) : (
         <div>
           <h1>Questionnaire finished</h1>
-          <button onClick={() => console.log("score: " + score)}>
+          <Link href='/leaderboard'>
+          <button>
             View Score
           </button>
+          </Link>
         </div>
       )}
     </div>
