@@ -6,10 +6,10 @@ const questionsArray = [
   {
     question: "How do you travel to work ?",
     answers: [
-      { answer: "Car / Motorbike", points: 0 },
-      { answer: "Car Share", points: 1 },
-      { answer: "Bus", points: 2 },
-      { answer: "Walk / Cycle", points: 3 },
+      { options: "Car / Motorbike", points: 0 },
+      { options: "Car Share", points: 1 },
+      { options: "Bus", points: 2 },
+      { options: "Walk / Cycle", points: 3 },
     ],
   },
   {
