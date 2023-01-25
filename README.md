@@ -3,36 +3,41 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ## Getting Started
 
 First, run the development server:
+npm I
 
-```bash
+# then
+
 npm run dev
+
 # or
+
 yarn dev
+
 # or
+
 pnpm dev
+
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+School of Code - BAE Systems Hackathon
+Context
+We live in a world where our the negative impact of human beings on the environment (eg climate change, loss of habitats and bio-diversity) is evident for us all to see
+As a business BAE Systems has committed to achieving net zero emissions in its operations by 2030, whilst working toward net zero in its value chain by 2050.  In Digital Intelligence our biggest contributors to our carbon footprint are likely to be IT and compute resources and our offices, plus the energy our employees expend in travel and home working
+Your brief
+If you were working for a large company, like BAE Systems, how could you use a web app to promote sustainability, to individuals and software development project teams and / or to IT operational teams?
+You might want to think about how you make teams aware of their carbon footprint or to suggest ways that company employees can reduce their own or the company’s carbon footprint.  You may even want to consider the carbon footprint of your proposed web app
+Alternatively you might want to promote other areas of sustainability such as recycling or reducing use of plastic
+Success
+At the end of the Hackathon we want you to articulate your team’s idea(s) and, if possible, demo those ideas coming to life eg hi-fi wireframes, a demo UI
+You should also be able to talk about what would be in scope for an MVP and what technology choices you would make
+Whatever you do the key success criteria is to engage your users, the employees / teams in the company, through the app
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+This is our answer to the above project scope.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+we created an app which gamifys the experience of saving the world by educating our sustainability knowledge. This is done by bringing knowledge on carbon footprint and self awareness.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+our project aims to allow the company to set quizzes and tasks to earn points.  these ccan be changed quarterly to develop th xp.
+the scores are tallied by individual and potentially by deptb and site allowing competition andd reward.  This also allows copanies ton advertise their priogress and their position in reducing the carbbon footprint.
+```
