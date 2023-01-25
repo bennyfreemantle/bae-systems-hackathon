@@ -19,27 +19,42 @@ export default function QuestionnaireForm({
   const endOfQuestionnaire = questionStep === questionsArray.length;
 
   return (
-    <div>
+    <div className="container mx-auto p-4">
       {!endOfQuestionnaire ? (
-        <form onSubmit={(e) => handleSubmit(e)}>
-          <label>{questionsArray[questionStep].question}</label>
+        <form
+          className="w-full flex flex-col gap-4 items-center"
+          onSubmit={(e) => handleSubmit(e)}
+        >
+          <label className="text-2xl md:w-1/2 text-center">
+            {questionsArray[questionStep].question}
+          </label>
           {questionsArray[questionStep].answers.map((answer, index) => {
             return (
-              <div key={answer.options}>
+              <div
+                key={answer.options}
+                className="rounded-md border-2 p-2 flex gap-2 w-full border-blue-700 md:max-w-[600px]"
+              >
                 <input
                   value={answer}
                   onChange={() => setAnswer(answer.points)}
                   name={"options"}
                   type={"radio"}
                   id={`answers${index}`}
+                  required
                 />
-                <label value={answer.points} htmlFor={`answers${index}`}>
+                <label
+                  className="w-full"
+                  value={answer.points}
+                  htmlFor={`answers${index}`}
+                >
                   {answer.options}
                 </label>
               </div>
             );
           })}
-          <button>Next</button>
+          <button className="rounded bg-blue-700 w-1/2 p-2 text-white text-lg">
+            Next
+          </button>
         </form>
       ) : (
         <div>

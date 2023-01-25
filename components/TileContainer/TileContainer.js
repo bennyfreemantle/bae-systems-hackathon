@@ -14,7 +14,7 @@ export default function TileContainer() {
         <Tile
           title={"Questionnaire"}
           desc={"Take our questionnaire to see your current carbon footprint"}
-          buttonText={"questionnaire ->"}
+          buttonText={"Questionnaire ->"}
           hrefLink={"/questionnaire"}
         />
       </div>
