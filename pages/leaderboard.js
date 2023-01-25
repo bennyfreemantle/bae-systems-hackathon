@@ -1,5 +1,6 @@
 import { React } from "react";
 import { useScore } from "@/context/useScore"
+import { RiMedal2Fill} from 'react-icons/ri';
 
 export default function Leaderboard () {
 
@@ -13,13 +14,33 @@ export default function Leaderboard () {
 
     return (
         <div className="container mx-auto p-3 bg-red-400 flex flex-col items-center">
+        <div className="flex">
         <p>Leaderboard</p>
         <div>
-        <p>Your score: {score} {medal} </p>
-        <p>Mukti: 13 Gold</p>
-        <p>Luke: 7 Silver</p>
-        <p>Ben: 4 Bronze</p>
+        <p>Name</p>
+        <p>User</p>
+        <p>Mukti</p>
+        <p>Luke</p>
+        <p>Ben</p>
+        </div>
+        <div>
+        <p>Your score </p>
+        <p>{score}</p>
+        <p>13</p>
+        <p>7</p>
+        <p>4</p>
+        </div>
+        
+        <div>
+        <p>Rating</p>
+        <RiMedal2Fill />
+        <RiMedal2Fill />
+        <RiMedal2Fill />
+        <RiMedal2Fill />
+        </div>
+        
         </div>
         </div>
+        
     )
 }
