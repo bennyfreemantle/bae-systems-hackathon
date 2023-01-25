@@ -1,7 +1,8 @@
-import TileContainer from "@/components/TileContainer/TileContainer";
+import QuestionnaireForm from "@/components/QuestionnaireForm/QuestionnaireForm";
 import Head from "next/head";
+import React from "react";
 
-export default function Home() {
+export default function Questionnaire() {
   return (
     <>
       <Head>
@@ -11,7 +12,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="flex flex-col justify-center min-h-screen">
-        <TileContainer />
+        <QuestionnaireForm />
       </main>
     </>
   );
