@@ -9,6 +9,13 @@ export default function Leaderboard() {
   const medal =
     score <= 6 ? "Bronze" : score > 6 && score <= 12 ? "Silver" : "Gold";
 
+  const medalClass =
+    medal === "Bronze"
+      ? "text-amber-900"
+      : medal === "Silver"
+      ? "text-zinc-400"
+      : "text-amber-400";
+
   return (
     <>
       <Head>
@@ -31,28 +38,36 @@ export default function Leaderboard() {
             <td className="text-left p-2">You</td>
             <td className="text-left p-2">{score}</td>
             <td className="text-left p-2">
-              <RiMedal2Fill size={23} />
+              <div className={`${medalClass}`}>
+                <RiMedal2Fill size={23} />
+              </div>
             </td>
           </tr>
           <tr>
             <td className="text-left p-2">Mukti</td>
             <td className="text-left p-2">13</td>
             <td className="text-left p-2">
-              <RiMedal2Fill size={23} />
+              <div className={`text-amber-400`}>
+                <RiMedal2Fill size={23} />
+              </div>
             </td>
           </tr>
           <tr>
             <td className="text-left p-2">Luke</td>
             <td className="text-left p-2">7</td>
             <td className="text-left p-2">
-              <RiMedal2Fill size={23} />
+              <div className={`text-zinc-400`}>
+                <RiMedal2Fill size={23} />
+              </div>
             </td>
           </tr>
           <tr>
             <td className="text-left p-2">Ben</td>
             <td className="text-left p-2">4</td>
             <td className="text-left p-2">
-              <RiMedal2Fill size={23} />
+              <div className={`text-amber-900`}>
+                <RiMedal2Fill size={23} />
+              </div>
             </td>
           </tr>
         </table>

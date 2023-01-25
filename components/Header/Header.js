@@ -20,7 +20,7 @@ export default function Header() {
               <Link href={"/leaderboard"}>Leaderboard</Link>
             </li>
             <li className="text-lg">
-              <Link href={"/learning"}>Learning</Link>
+              <Link href={"/learn"}>Learn</Link>
             </li>
           </ul>
         </nav>
