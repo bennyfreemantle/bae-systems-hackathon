@@ -13,7 +13,16 @@ const questionsArray = [
     ],
   },
   {
-    question: "How do you travel to work ?",
+    question: "How do you travel to work ????",
+    answers: [
+      { options: "Car / Motorbike", points: 0 },
+      { options: "Car Share", points: 1 },
+      { options: "Bus", points: 2 },
+      { options: "Walk / Cycle", points: 3 },
+    ],
+  },
+  {
+    question: "How do you travel to work ????",
     answers: [
       { options: "Car / Motorbike", points: 0 },
       { options: "Car Share", points: 1 },
@@ -38,6 +47,7 @@ export default function Questionnaire() {
         <QuestionnaireForm
           questionsArray={questionsArray}
           questionStep={questionStep}
+          setQuestionStep={setQuestionStep}
         />
       </main>
     </>

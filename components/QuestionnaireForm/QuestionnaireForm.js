@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useScore } from "@/context/useScore";
 
 export default function QuestionnaireForm({
   questionsArray,
@@ -6,25 +7,48 @@ export default function QuestionnaireForm({
   setQuestionStep,
 }) {
   const [answer, setAnswer] = useState();
+  const { score, setScore } = useScore();
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    setQuestionStep((prev) => prev + 1);
+    setScore((prev) => prev + answer);
+    console.log(answer);
+  }
+
+  const endOfQuestionnaire = questionStep === questionsArray.length;
 
   return (
     <div>
-      <form>
-        <label>{questionsArray[questionStep].question}</label>
-        {questionsArray[questionStep].answers.map((answer, index) => {
-          return (
-            <div key={answer.options}>
-              <input name={"options"} type={"radio"} id={`answers${index}`} />
-              <label value={answer.points} for={`answers${index}`}>
-                {answer.options}
-              </label>
-            </div>
-          );
-        })}
-        <button onClick={() => setQuestionStep((prev) => prev + 1)}>
-          Next
-        </button>
-      </form>
+      {!endOfQuestionnaire ? (
+        <form>
+          <label>{questionsArray[questionStep].question}</label>
+          {questionsArray[questionStep].answers.map((answer, index) => {
+            return (
+              <div key={answer.options}>
+                <input
+                  value={answer}
+                  onChange={() => setAnswer(answer.points)}
+                  name={"options"}
+                  type={"radio"}
+                  id={`answers${index}`}
+                />
+                <label value={answer.points} htmlFor={`answers${index}`}>
+                  {answer.options}
+                </label>
+              </div>
+            );
+          })}
+          <button onClick={(e) => handleSubmit(e)}>Next</button>
+        </form>
+      ) : (
+        <div>
+          <h1>Questionnaire finished</h1>
+          <button onClick={() => console.log("score: " + score)}>
+            View Score
+          </button>
+        </div>
+      )}
     </div>
   );
 }
