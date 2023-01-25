@@ -13,21 +13,43 @@ const questionsArray = [
     ],
   },
   {
-    question: "How do you travel to work ????",
+    question: "Do you sort out glass, paper, plastic, bottles and cans?",
     answers: [
-      { options: "Car / Motorbike", points: 0 },
-      { options: "Car Share", points: 1 },
-      { options: "Bus", points: 2 },
-      { options: "Walk / Cycle", points: 3 },
+      { answer: "No", points: 0 },
+      { answer: "Sometimes", points: 1 },
+      { answer: "Yes", points: 3 },
     ],
   },
   {
-    question: "How do you travel to work ????",
+    question: "Do you use reusable bags?",
     answers: [
-      { options: "Car / Motorbike", points: 0 },
-      { options: "Car Share", points: 1 },
-      { options: "Bus", points: 2 },
-      { options: "Walk / Cycle", points: 3 },
+      { answer: "No", points: 0 },
+      { answer: "Sometimes", points: 1 },
+      { answer: "Yes", points: 3 },
+    ],
+  },
+  {
+    question: "Do you switch off appliances when not in use?",
+    answers: [
+      { answer: "No", points: 0 },
+      { answer: "Sometimes", points: 1 },
+      { answer: "Yes", points: 3 },
+    ],
+  },
+  {
+    question: "How much do you personally prioritse recycling at work",
+    answers: [
+      { answer: "No what can i do?", points: 0 },
+      { answer: "Sometimes i do my best", points: 1 },
+      { answer: "I always try to prioritse", points: 3 },
+    ],
+  },
+  {
+    question: "How easy accessible is recycling at work",
+    answers: [
+      { answer: "Not evident?", points: 0 },
+      { answer: "Some opportunities", points: 1 },
+      { answer: "We have multiple recycling options", points: 3 },
     ],
   },
 ];
