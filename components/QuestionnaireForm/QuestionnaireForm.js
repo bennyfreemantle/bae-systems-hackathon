@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useScore } from "@/context/useScore";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 export default function QuestionnaireForm({
   questionsArray,
@@ -9,6 +10,7 @@ export default function QuestionnaireForm({
 }) {
   const [answer, setAnswer] = useState();
   const { score, setScore } = useScore();
+  const router = useRouter();
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -18,6 +20,9 @@ export default function QuestionnaireForm({
   }
 
   const endOfQuestionnaire = questionStep === questionsArray.length;
+  if (endOfQuestionnaire) {
+    router.push("/leaderboard");
+  }
 
   return (
     <div className="container mx-auto p-4">
@@ -57,16 +62,13 @@ export default function QuestionnaireForm({
             Next
           </button>
         </form>
-      ) : (
-        <div>
-          <h1>Questionnaire finished</h1>
-          <Link href='/leaderboard'>
-          <button>
-            View Score
-          </button>
-          </Link>
-        </div>
-      )}
+      ) : // <div>
+      //   <h1>Questionnaire finished</h1>
+      //   <Link href="/leaderboard">
+      //     <button>View Score</button>
+      //   </Link>
+      // </div>
+      null}
     </div>
   );
 }
