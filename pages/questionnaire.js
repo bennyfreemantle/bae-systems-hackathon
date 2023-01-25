@@ -15,41 +15,41 @@ const questionsArray = [
   {
     question: "Do you sort out glass, paper, plastic, bottles and cans?",
     answers: [
-      { answer: "No", points: 0 },
-      { answer: "Sometimes", points: 1 },
-      { answer: "Yes", points: 3 },
+      { options: "No", points: 0 },
+      { options: "Sometimes", points: 1 },
+      { options: "Yes", points: 3 },
     ],
   },
   {
     question: "Do you use reusable bags?",
     answers: [
-      { answer: "No", points: 0 },
-      { answer: "Sometimes", points: 1 },
-      { answer: "Yes", points: 3 },
+      { options: "No", points: 0 },
+      { options: "Sometimes", points: 1 },
+      { options: "Yes", points: 3 },
     ],
   },
   {
     question: "Do you switch off appliances when not in use?",
     answers: [
-      { answer: "No", points: 0 },
-      { answer: "Sometimes", points: 1 },
-      { answer: "Yes", points: 3 },
+      { options: "No", points: 0 },
+      { options: "Sometimes", points: 1 },
+      { options: "Yes", points: 3 },
     ],
   },
   {
     question: "How much do you personally prioritse recycling at work",
     answers: [
-      { answer: "No what can i do?", points: 0 },
-      { answer: "Sometimes i do my best", points: 1 },
-      { answer: "I always try to prioritse", points: 3 },
+      { options: "No what can i do?", points: 0 },
+      { options: "Sometimes i do my best", points: 1 },
+      { options: "I always try to prioritse", points: 3 },
     ],
   },
   {
     question: "How easy accessible is recycling at work",
     answers: [
-      { answer: "Not evident?", points: 0 },
-      { answer: "Some opportunities", points: 1 },
-      { answer: "We have multiple recycling options", points: 3 },
+      { options: "Not evident?", points: 0 },
+      { options: "Some opportunities", points: 1 },
+      { options: "We have multiple recycling options", points: 3 },
     ],
   },
 ];
