@@ -18,7 +18,7 @@ const questionsArray = [
     answers: [
       { options: "No", points: 0 },
       { options: "Sometimes", points: 1 },
-      { options: "Yes", points: 3 },
+      { options: "I do my best", points: 3 },
     ],
   },
   {
@@ -26,15 +26,15 @@ const questionsArray = [
     answers: [
       { options: "No", points: 0 },
       { options: "At times", points: 1 },
-      { options: "Yes", points: 3 },
+      { options: "All the time", points: 3 },
     ],
   },
   {
     question: "Do you switch off appliances when not in use?",
     answers: [
-      { options: "No", points: 0 },
+      { options: "Never", points: 0 },
       { options: "Sometimes", points: 1 },
-      { options: "Yes", points: 3 },
+      { options: "Always", points: 3 },
     ],
   },
   {
