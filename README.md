@@ -40,4 +40,7 @@ we created an app which gamifys the experience of saving the world by educating 
 
 our project aims to allow the company to set quizzes and tasks to earn points.  these ccan be changed quarterly to develop th xp.
 the scores are tallied by individual and potentially by deptb and site allowing competition andd reward.  This also allows copanies ton advertise their priogress and their position in reducing the carbbon footprint.
+
+Thank you
+Ben Fremantle, Mukti Zavery and Luke Adams
 ```
